@@ -1,0 +1,21 @@
+.s-row{
+    padding : 10px 10px;
+    min-height: 100vh;
+    display: flex;
+}
+
+.s-col:first-child{
+    flex : 1 ;
+    border : 1px solid black ;
+}
+
+.s-col:last-child{
+    flex :4 ;
+    border : 1px solid black ;
+}
+
+.s-col:first-child h2{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

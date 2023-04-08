@@ -1,0 +1,36 @@
+@font-face {
+  font-family: myFont;
+  src: url('./assets/fonts/BarlowCondensed-Regular.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: myFont;
+  color : #001e28;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
+}
+
+body::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}

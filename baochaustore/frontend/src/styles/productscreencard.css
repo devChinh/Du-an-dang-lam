@@ -1,0 +1,139 @@
+.screen-container{
+    min-height: 100vh;
+}
+
+.screen-container .screen-row{
+    display: flex;
+    min-height: 100vh;
+}
+
+.screen-container .screen-row .screen-col{
+    height: 100%;
+    padding: 25px 10px;
+    margin: auto 0;
+}
+
+.screen-container .screen-row .screen-col:first-child{
+    display: flex;
+    justify-content: center;
+    flex: 3;
+}
+
+.screen-container .screen-row .screen-col:last-child{
+    flex : 2 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.screen-container .screen-row .screen-col .screen-images {
+    width: 50%;
+}
+
+
+.screen-container .screen-row .screen-col .screen-images .screen-top img{
+    border-radius : 3rem;
+    width: 300px;
+}
+
+.screen-container .screen-row .screen-col .screen-images .screen-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.screen-container .screen-row .screen-col .screen-images .screen-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+}
+
+.screen-container .screen-row .screen-col .screen-images .screen-bottom img{
+    width: 75px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #000000;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.screen-container .screen-row .screen-col .screen-images .screen-bottom img:hover{
+    transform : scale(1.02)
+}
+
+
+.screen-container .screen-row .screen-col .first-div .title{
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-style: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.screen-container .screen-row .screen-col .first-div .category{
+    text-transform: uppercase;
+    padding: 2px 10px;
+    background-color: #000000;
+    max-width: max-content;
+    color : #ffff;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+}
+
+.screen-container .screen-row .screen-col .second-div .price{
+    font-weight: bold;
+    font-size: 18px
+}
+
+.screen-container .screen-row .screen-col .second-div .quantity{
+    padding: 2px 30px;
+    background-color: #00000011;
+    margin-top: 15px;
+    max-width: max-content;
+    margin-bottom: 1.5rem;
+}
+
+.screen-container .screen-row .screen-col .third-div .desc{
+    letter-spacing: 1.2px;
+}
+
+.screen-container .screen-row .screen-col .fourth-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.screen-container .screen-row .screen-col .fourth-div button{
+    border : none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+.screen-container .screen-row .screen-col .fourth-div button:active{
+    transform: translateY(-10px)
+}
+
+
+.screen-container .screen-row .screen-col .fourth-div .cart{
+    background-color: #ffee00;
+    color : #ffffff;
+}
+
+.screen-container .screen-row .screen-col .fourth-div .wish{
+    background-color: #0066ff;
+    color : #ffffff;
+}
+
+.screen-container .screen-row .screen-col .fourth-div .cart:hover{
+    background-color: #ffffff;
+    color : #ffee00
+}
+
+.screen-container .screen-row .screen-col .fourth-div .wish:hover{
+    background-color: #ffffff;
+    color : #0066ff;
+}

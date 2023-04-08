@@ -1,0 +1,68 @@
+.f-container{
+    padding : 20px 15px 20px 15px;
+}
+
+.f-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-col{
+    flex : 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 135px;
+}
+
+.f-col:first-child p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.f-col:first-child .logo{
+    text-align: center;
+}
+.f-col:nth-child(2),
+.f-col:nth-child(3),
+.f-col:last-child{
+    align-items: center;
+    display: flex;
+}
+
+.f-col:nth-child(3){
+    padding-top: 0;
+}
+
+.f-col:nth-child(1) h1,
+.f-col:nth-child(2) h2,
+.f-col:nth-child(3) h2,
+.f-col:last-child h2
+{
+ margin-bottom: 20px;
+}
+
+.f-col:nth-child(2) ul li a,
+.f-col:nth-child(3) ul li a{
+    color : #001e28;
+    font-size: 20px;
+}
+
+.f-col:nth-child(2) ul,
+.f-col:nth-child(3) ul{
+
+}
+
+
+.f-col:nth-child(2) ul li a:hover,
+.f-col:nth-child(3) ul li a:hover{
+    color : red;
+}
+
+.f-coppyrow{
+    text-align: center;
+    font-size: 14px;
+    margin-top : 30px;
+    letter-spacing:1.2px;
+}

@@ -1,0 +1,56 @@
+.hp-card{
+    width: 250px;
+    height: auto;
+    box-shadow: 0 0 10px #000000;
+    margin: 0 15px 15px 15px;
+    border-radius:10px;
+    transition: all 0.5s;
+}
+
+.hp-card .card-header img{
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.hp-card .card-header{
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    padding: 5px;
+}
+
+.hp-card:hover .card-header img{
+    transform: scale(1.05)
+}
+
+.hp-card .card-body{
+    text-align: center;
+    padding: 10px 5px;
+}
+
+
+.hp-card .card-body span{
+    margin-top: 10px;
+}
+
+
+.hp-card .card-footer{
+    padding: 15px 5px;
+    display: flex;
+    justify-content : space-around;
+}
+
+.hp-card .card-footer button{
+    padding: 5px 15px;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 20px;
+    color : #000000;
+}
+
+.hp-card .card-footer button:hover{
+    transform: translateY(-5px);
+}

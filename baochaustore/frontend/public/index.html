@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      const json = {
+        0: {
+          id: 1,
+          name: "Dog 1",
+          price: 12,
+          date: "11/11/2023",
+        },
+        2: {
+          id: 2,
+          name: "Dog 2",
+          price: 11,
+          date: "11/12/2023",
+        },
+        3: {
+          id: 3,
+          name: "Dog 3",
+          price: 15,
+          date: "11/12/2023",
+        },
+        4: {
+          id: 4,
+          name: "Dog 4",
+          price: 10,
+          date: "11/11/2023",
+        },
+      };
+
+      // chuyen doi json sang array
+      // tim kiem nhung con vat co gia tren 12 usd
+
+      const arrJson = [{ ...json }];
+
+      console.log("arrJson", arrJson);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+.n-container{
+    height: 25vh;
+    background-color: beige;
+    padding : 5px 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.4);
+    width: 100vw;
+}
+
+.n-row:first-child{
+    display : flex ;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.n-row:nth-child(2){
+    display : flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.n-location{
+ letter-spacing: 1.2px;
+ font-size: 20px;
+ margin-right: 15px;
+}
+
+.n-phone{
+    letter-spacing: 1.2px;
+    font-size: 20px; 
+}
+
+.n-location i , .n-phone i{
+    margin-right: 10px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials .user i{
+margin-right:5px;
+font-size: 20px;
+}
+
+.socials .user{
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+
+.socials img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    margin : 0 5px;
+    transition: all 0.5;
+}
+
+.socials img:hover{
+    transform: scale(1.5)
+}
+
+.icons span{
+    position: relative;
+    margin : 0 10px;
+    text-transform : uppercase;
+}
+
+.icons i {
+    font-size: 20px;
+    color : #001e28;
+}
+
+.text-login{
+    font-weight: 600;
+    color : #001e28;
+}
+
+.icons span .totalItems{
+    position : absolute ;
+    top : -15px;
+    right : -20px;
+    color : #ffffff;
+    display : flex ;
+    align-items: center ;
+    justify-content: center;
+    background-color : #ff0000;
+    height: 18px;
+    border-radius : 4px;
+    width: 18px;
+}
+
+.items{
+    list-style: none;
+    background : linear-gradient(45deg , #001e28 , rgba(53, 53, 53, 0.5));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding : 5px 0;
+}
+
+.list{
+    margin-right: 20px;
+}
+
+.list a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color : #ffffff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transform: all 0.2s;
+    font-weight: 600;
+}
+
+.list a:hover{
+    color : #ff0000;
+}
+
+.btn{
+    display: none;
+    position : absolute;
+    top: 7px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+
+.list a.active{
+    color : #ff0000;
+}
+/* responsive iphone 5/SE */
+@media screen and (max-width:321px){
+    .n-container{
+        height: 190px;
+    }
+
+    .n-row:first-child{
+        display : block !important;
+    }
+    
+    .socials  {
+    margin-top: 10px;
+    }
+
+    .socials img{
+        width: 30px;
+    }
+
+    .socials img:hover{
+        transform: scale(1.5)
+    }
+
+    .logo{
+        font-size:17px;
+    }
+
+    .list a {
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .list:first-child a{
+        margin-left: 9px;
+    }
+
+    .list a.active{
+        font-weight: 600;
+    }
+    .icons i {
+        font-size: 15px;
+    }
+    .text-login{
+        font-size: 15px;
+    }
+    .icons span .totalItems{
+        height: 15px;
+        width: 15px;
+        top : -8px;
+    }
+    .items{
+        padding : 5px 0px 8px 0px;
+        display: flex;
+    }
+
+}
+
+/* responsive iphone 6/7/8 plus and iphone X */
+@media screen and (min-width: 322px)  and (max-width : 376px)  {
+    .logo{
+        font-size: 20px;
+    }
+    .n-container{
+        height: 190px;
+    }
+    .socials{
+        display: flex;
+    }
+    .socials img{
+        width: 30px;
+        height: auto;
+    }
+    .n-location{
+        font-size: 15px;
+    }
+    .n-container{
+        height: 180px;
+    }
+    .n-row:nth-child(2){
+        display : flex;
+        align-items: center ;
+        margin-bottom: 30px;
+    }
+    .list a {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .list a.active{
+        font-weight: 600;
+    }
+    .items {
+        padding : 5px 0;
+    }
+}
+
+@media screen and (min-width: 377px)and (max-width : 415px ){
+    .socials{
+        display: flex;
+    }
+
+    .n-container{
+        height: 190px;
+    }
+
+    .n-row:nth-child(2){
+        display : flex;
+        align-items: center ;
+        margin-bottom: 30px;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .list a {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .list:first-child a{
+        margin-left: 10px;
+    }
+
+    .list a.active{
+        font-weight: 600;
+    }
+    
+    .items{
+        padding : 5px 0;
+    }
+}
+
+/* small tablet */
+@media screen and (min-width:416px) and (max-width: 601px) {
+}
+
+
+/* ipad */
+@media screen and (min-width:602px) and (max-width: 770px) {
+}
+
+/*ipad pro*/
+@media screen and (min-width : 771px ) and ( max-width :1025px){
+    .n-row:nth-child(2){
+        display : flex;
+        align-items: center ;
+    }
+    .list a {
+        font-weight: 600;
+    }
+
+    .list a.active{
+        font-weight: 600;
+    }
+}
